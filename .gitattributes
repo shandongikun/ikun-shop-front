@@ -1,7 +1,13 @@
 # 自动处理文本文件的行结束符
 * text=auto
 
-# 确保代码文件使用 LF
+# 明确指定 .gitattributes 使用 LF
+.gitattributes text eol=lf
+
+# 允许 .gitignore 使用 CRLF
+*.gitignore text eol=crlf
+
+# 其他代码文件使用 LF
 *.js text eol=lf
 *.vue text eol=lf
 *.json text eol=lf
@@ -13,15 +19,3 @@
 *.png binary
 *.jpg binary
 *.gif binary
-
-
-
-# 忽略 node_modules
-node_modules/
-
-# 忽略编译输出
-dist/
-build/
-
-# 忽略环境变量
-.env*
