@@ -5,6 +5,6 @@
 	<router-link to="/prin">按钮</router-link>
     <router-view></router-view> <!-- 必须存在 -->
 	<!-- 修改测试上传 -->
-	<!-- asd -->
+	<!-- asd --11111>
   </div>
 </template>
